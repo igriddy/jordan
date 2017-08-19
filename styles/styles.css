@@ -1,0 +1,457 @@
+ /* inline-in a line with elements surrounding it. block-disturbs inline organization. inline-block will create its own space inline */
+
+
+.nav {
+			text-align: center;
+			height: 70px; /* what does that mean */
+			background-color: rgba(218, 224, 234, 0.25); /* a is for opacity- value 0-1. 1 is no transparency. 0.5 transparent normal*/
+			width: 100%;
+			position: fixed;
+			left: 0;
+  		top: 10px;
+  		z-index: 999; /* property specifies the stack order of an element. */
+
+		}
+
+
+ul {
+
+		padding: 20px;
+
+	}
+
+
+.nav li {
+   			display: inline;
+   			font-size: 24px;
+   			font-family: "Arial", san-serif;
+   			color: rgb(242, 149, 125);
+   			font-weight: bold;
+   			text-transform: uppercase;
+   			text-decoration: none;
+   			margin-left: 20px ;
+   			margin-right: 20px ;
+   			padding: 2px 20px;
+
+   			}
+
+
+ a:link {         /* this normal, unvisted link*//* look more into these links */
+				text-decoration: none;
+
+
+   			}
+
+a:visited {
+					color:;
+
+
+					}
+
+
+a:hover {
+
+				color: seagreen;
+
+				}
+
+.nav .logo {
+					font-size: 24px;
+					font-family: "Sedgwick Ave Display";
+					float: left;
+   				color:rgb(242, 149, 125);
+					text-shadow: black;
+					text-align: center;
+					margin-left: 10px;
+
+	  			}
+
+
+.dropdown  {
+
+	   				position: relative;
+           	display: inline-block;
+
+	  			}
+
+.dropdown-content {
+	          			display: none;
+                  position: absolute;
+				     		  background-color: rgba(218, 224, 234, 0.1);
+
+
+									}
+
+.dropdown-content li {
+
+
+}
+
+.dropdown-content a {
+    		    text-decoration: none;
+   		    display: block;
+										}
+
+
+.dropdown:hover .dropdown-content {
+   			  	   										display: block;
+				  												}
+
+
+.hero {
+      font-family: "Roboto", serif; 
+      min-height: 800px;
+      background-size: cover;
+      padding-bottom: 50px;
+
+
+      display: flex;   /* (flex)box use an entire line of space in a web page*/
+      align-items: center ;      /*centers items x-axis horizontally */
+      justify-content: center;       /*centers items y-axis vertically */
+      flex-direction: column;       /* arrange items in a column*/
+    }
+
+
+
+
+.hero h1 { /*hero is the parent class and h1 is the child element */
+
+				line-height: 70px;
+	 			font-size: 40px;
+
+	 				}
+
+.hero h2 {
+        margin-top: 100px;
+  			margin-bottom: 50px;
+				font-size: 40px;
+				font-weight: bold;
+				text-decoration: overline rgb(206, 167, 84);
+				padding: 10px 25px;
+				line-height: 40px;
+				color: rgb(242, 149, 125);
+
+        }
+
+
+
+#home  {
+
+			background-image: url("../img/gallery/jordan/jojo-04.png")  ;
+			min-height: 800px;
+      background-size: cover;
+      background-attachment: fixed;
+
+	  }
+
+#home h1, #home h5 {
+	     						text-shadow: rgba(0, 0, 0, .25) 0px 5px 5px;
+
+
+									}
+
+
+#home h5 {
+
+	margin-bottom: 20px;
+	font-size:45px;
+	font-weight: 700;
+        }
+
+#main {
+	display: block;
+	text-align: right;
+	padding-top: 200px;
+	align-content: center;
+
+      }
+
+#main h1 {
+	 font-size: 88px;
+         font-family: 'Sedgwick Ave Display', cursive;
+	 color: rgb(242, 149, 125);
+	 padding-top: 165px;
+	 padding-bottom: 18px;
+
+	}
+
+#main .cta {
+
+	   margin-right: 120px;
+
+           }
+
+#main .cta:hover {
+
+									background-color: seagreen;
+
+           	}
+
+
+.cta { /*cta- call to action button */
+
+     background-color: #333;
+     color: #fff;
+     padding: 0; /*when value is 0 do not need to put px */
+     width: 180px;
+     font-size: 18px;
+     line-height: 50px;
+     border: none; /*remember syntax- value for border  */
+     border-radius: 4px;
+     cursor: pointer;
+     }
+
+.cta:hover { /*pseudo-selector :hover */
+	   			background-color: #00CFFF;
+	   				}
+
+#about {
+			min-height: 10px;
+			width: 100%;
+			background-color:rgb(249, 228, 184) ;
+      }
+
+#about .left-col {
+	  	color: black;
+    	  	padding: 5px;
+          	text-transform: uppercase;
+          	word-spacing: 2px;
+	   						}
+
+
+.left-col h1 {
+	     text-transform: capitalize;
+
+	     }
+
+
+.left-col h2 {
+	     	margin-top: 0;
+	     	margin-bottom: 0;
+	     	font-size: 34px;
+	     	line-height: 65px;
+       	    }
+
+
+.left-col h3 {
+	      text-transform: capitalize;
+	      line-height: 45px;
+
+ 	      }
+
+
+.right-col img  {
+		height: 800px;
+		width: 100%;
+		position: ;
+		border-radius: 100px ;
+
+		}
+
+
+.right-col h5 {
+	      font-size: 24px;
+	      line-height: 30px;
+	     }
+
+
+#gallery {
+	 background-color: #EEFDF9;
+
+	 }
+
+
+#gallery .col-md-4 {
+		   overflow: hidden ;
+	           padding-top: 0;
+                   padding-right: 25px;
+                   padding-bottom: 30px;
+                   padding-left: 5px;
+
+		   }
+
+.col-md-4 img {
+	      	height: 700px;
+	      	width: 300px;
+	      	max-width: 390px;
+	      	max-height: 380px;
+	      	box-shadow: 8px 3px 10px grey;
+
+
+	      }
+
+
+#reel {
+	height: 800px;
+	background-color: rgb(249, 228, 184) ;
+
+	}
+
+
+iframe {
+   	display: block;
+   	margin: 0 auto;
+   
+	}
+
+
+#resume {
+	padding-right: 10px;
+	padding-left: 10px;
+
+	}
+
+#resume img {
+
+	float: left;
+	    }
+
+
+pre {
+	background-color: #EEFDF9;
+	font-family: ; /* formatting o f text change when add font-family*/
+	font-size: 18px;
+	}	
+
+
+
+#contact p {
+	    font-size: 24px;
+	    margin-bottom: 40px;
+	   float: left;
+
+	    }
+
+
+
+form  {
+	float: right;
+	border: 1px solid black;
+	height: 300px;
+	width: 400px;
+	padding: 10px 20px;
+
+	}
+
+
+input {
+    	width: 100%;
+    	padding: 12px 20px;
+    	margin: 8px 0;
+    	box-sizing: border-box;
+
+	}
+
+
+input [type=text] {
+		width: 100%;
+    		padding: 12px 20px;
+    		margin: 8px 0;
+    		display: inline-block;
+    		border: 1px solid #ccc;
+    		border-radius: 4px;
+    		box-sizing: border-box;
+
+		}
+
+
+
+#social {
+	padding: 20px;
+	}
+
+
+#social a {
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 10px;
+	text-decoration: none;
+	}
+
+
+#social img {
+	    height: 20px;
+
+    	    }
+
+
+#social img:hover {
+ 		opacity: 0.5;
+   		}
+
+
+#footer {
+	height: 100px;
+	display: flex;
+	background-color: rgb(242, 149, 125);
+
+         }
+
+#footer a {
+	display: inline;
+	color: black;
+	font-size: 16px;
+	line-height: 40px;
+	padding: 0;
+	margin-left: 5px;
+	margin-right: 20px;
+
+	}
+
+
+#footer .footer-item {
+		    flex: 1;
+		    max-width: 100px;
+
+		      }
+
+.copyright {
+	  margin-left: auto; /*auto to the webpage dimensions */
+	  color: #00E2AC;
+
+	   }
+
+
+@media only screen and (max-width: 480px) {
+
+	.nav {
+	      width: 100%;
+	     }
+
+	 #intro {
+        min-height: 640px;
+    			}
+
+    .left-col h2 {
+        	font-size: 42px;
+        	line-height: 40px;
+
+    		}
+
+    #footer {
+            margin-left: 20px;
+            margin-right: 20px;
+
+    				}
+
+    #footer h4 {
+        	margin-right: 20px;
+    		}
+}
+
+@media only screen and (max-width: 992px) {
+    .row {
+        	width: 100%;
+    			}
+
+    .col-md-4 {
+        			width: 100%;
+    					}
+
+    .col-md-4 img {
+        					width: 100%;
+        					max-width: 992px;
+        					max-height: 900px;
+    }
+}
